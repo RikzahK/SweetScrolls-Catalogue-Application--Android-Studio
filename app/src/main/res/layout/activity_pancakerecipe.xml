@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        tools:context=".pancakerecipe">
+    <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="427dp"
+                    android:layout_height="491dp"
+                    android:src="@drawable/pancake2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ingredients"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20sp"
+                    android:layout_marginLeft="30dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="140dp"
+                                android:src="@drawable/honey"
+                                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="140dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/egg"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="140dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/sugar"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="How to make it"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="#A1FDDA85"
+                    android:paddingTop="10dp"
+                    android:text="Step 1
+\nWhisk milk, egg and vanilla together in a jug. Sift flour and bicarbonate of soda into a bowl. \nStir in sugar. Make a well in centre. Add milk mixture. Whisk until just combined.\n\nStep 2\nHeat a large non-stick frying pan over medium heat. Brush pan with butter. Using 1/4 cup mixture per pancake, cook 2 pancakes for 3 to 4 minutes or until bubbles appear on surface.\nTurn and cook for 3 minutes or until cooked through. Transfer to a plate. Cover loosely with foil to keep warm.\nRepeat with remaining mixture, brushing pan with butter between batches.\nServe.\n
+"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/review" />
+                <Button
+                    android:id="@+id/hompgbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#FB8C00"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:onClick="btnhomepgclick"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return to Home Page"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>

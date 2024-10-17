@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:elevation="5dp"
+android:orientation="vertical"
+tools:context=".burgerrecipe">
+    <include layout="@layout/toolbar" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="427dp"
+            android:layout_height="491dp"
+            android:src="@drawable/brgr2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Ingredients"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20sp"
+            android:layout_marginLeft="30dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/bun"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/tomato"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/onion"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="How to make it"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="#A1FDDA85"
+            android:paddingTop="10dp"
+            android:text="Step 1\nLine a tray with baking paper. Place the beef mince, breadcrumbs, onion, parsley, garlic, egg, Worcestershire sauce and Tabasco sauce, if using,in large bowl.Use your hands to mix until just combined.
+\n\nStep 2
+\nDivide the mixture into 6 equal portions. Shape each portion with your hands into a patty about: 10cm in diameter and 1.5cm thick.
+\n\nStep 3
+\nPlace the patties on prepared tray. Cover with plastic wrap and place in the fridge for at least 30 minutes to rest.
+\n\nStep 4
+\nHeat half the oil in a large non-stick frying pan over medium-low heat.\nCook half the patties for about 4 minutes each side or until browned and cooked through. Transfer the patties to a plate. Set aside and cover to keep warm. Repeat with the remaining oil and patties.
+\n\nStep 5
+\nMeanwhile, preheat the grill on high. Line a baking tray with foil. \nPlace the hamburger buns, cut-side up, under the grill and toast for 1 minute or until golden. Leave the grill on. \nPlace the patties on prepared tray. Top patties with cheddar. Place under the grill for 1 minute or until the cheddar is just melted.
+\n\nStep 6
+\nSpread the bottom halves of the toasted hamburger buns with the mustard, if using. Top with the lettuce, tomato and patties. Dollop with tomato sauce. Cover with the hamburger bun tops to serve."
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/review" />
+        <Button
+            android:id="@+id/hompgbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FB8C00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:onClick="btnhomepgclick"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return to Home Page"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

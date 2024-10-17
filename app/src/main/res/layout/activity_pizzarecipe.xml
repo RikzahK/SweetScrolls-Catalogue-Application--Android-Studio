@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    tools:context=".pizzarecipe">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="427dp"
+                android:layout_height="491dp"
+                android:src="@drawable/pizza2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Ingredients"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20sp"
+                android:layout_marginLeft="30dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/egg"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/cheese"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/tomato"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="How to make it"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#A1FDDA85"
+                android:paddingTop="10dp"
+                android:text="Step 1\nPreheat oven to 200°C.\n\nStep 2\nTo make the tomato sauce, heat the oil in a medium saucepan over medium heat.\nAdd the onion and cook, uncovered, stirring occasionally, for 5 minutes or until soft. \nAdd the garlic, coriander, cumin and chilli, and cook, stirring, for 30 seconds or until aromatic. \nStir in the tomatoes and bring to the boil over medium-high heat. Reduce heat to medium and cook, uncovered, stirring often, for 10 minutes or until thick. Set aside to cool for 10 minutes.\n\nStep 3\nMeanwhile, drain the peppers and pat dry with paper towel. Cut the peppers lengthways into 5mm-wide strips. Set aside.\n\nStep 4\nPlace the pizza crusts on a large baking tray. \nSpread the tomato sauce evenly . Arrange the pepper strips around the outer edges of the pizza bases, leaving just the centres uncovered. \nCarefully break an egg into the centre of each. Sprinkle with the mozzarella. Bake in preheated oven for 15 minutes or until the eggs are just set and the crust edges are golden brown.\n\nStep 5\nPlace pizzas on serving plates and sprinkle with coriander and pepper.\n"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/review" />
+            <Button
+                android:id="@+id/hompgbtn"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FB8C00"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="btnhomepgclick"
+                android:layout_marginBottom="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return to Home Page"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
